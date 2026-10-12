@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tu Brújula Política | Test ciudadano</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand"><div class="logo">✳</div><span>Tu Brújula Política</span></div><span class="pill">INDEPENDIENTE</span></header>
+<main>
+<section class="hero">
+<div class="eyebrow">Conoce tus ideas</div>
+<h1>¿Qué propuestas encajan contigo?</h1>
+<p>Responde con sinceridad a preguntas sobre los grandes temas del país y descubre con cuáles de los 13 partidos españoles analizados coinciden más tus opiniones.</p>
+<div class="stats"><div class="stat"><strong>60</strong> preguntas</div><div class="stat"><strong>20</strong> temas</div><div class="stat"><strong>8–10</strong> minutos</div></div>
+</section>
+<section class="panel" id="intro">
+<div class="panel-head"><h2>Antes de empezar</h2><span class="sub">Sin registro</span></div>
+<div class="intro-content">
+<p>Este cuestionario es una herramienta cívica orientativa, no una encuesta ni una recomendación de voto. No hace falta que sepas de política: puedes saltarte cualquier pregunta.</p>
+<div class="intro-grid">
+<div class="feature"><div class="emoji">🧭</div><strong>Tu opinión primero</strong><p>No hay respuestas correctas o incorrectas. Elige lo que más se acerque a tus ideas.</p></div>
+<div class="feature"><div class="emoji">📚</div><strong>Temas variados</strong><p>Economía, vivienda, educación, sanidad, seguridad, medio ambiente y más.</p></div>
+<div class="feature"><div class="emoji">🔒</div><strong>Privacidad</strong><p>Esta web calcula los resultados en tu navegador y no envía tus respuestas a un servidor.</p></div>
+</div>
+<div class="startrow"><button class="btn btn-primary" id="start">Empezar el test&nbsp; →</button></div>
+</div>
+</section>
+<section class="panel hidden" id="quiz">
+<div class="panel-head"><div><h2 id="stepTitle">Pregunta 1 de 60</h2><div class="sub" id="answered">0 respuestas completadas</div></div><span class="pill" id="percent">0%</span></div>
+<div class="progress"><span id="progressBar"></span></div>
+<div class="question-area"><div class="category" id="category"></div><div class="qnum" id="qnum"></div><h2 class="question" id="question"></h2><div class="answers" id="answers"></div></div>
+<div class="nav"><button class="btn btn-secondary" id="prev">← Anterior</button><div class="nav-right"><button class="btn btn-secondary" id="skip">Saltar</button><button class="btn btn-primary" id="next">Siguiente →</button><button class="btn btn-primary hidden" id="finish">Ver resultados</button></div></div>
+</section>
+<section class="panel hidden" id="results">
+<div class="results">
+<div class="eyebrow">Tu resumen</div><h2>Has completado el cuestionario</h2>
+<p id="summary"></p><div id="resultList" class="result-list"></div>
+<div class="result-note"><strong>Sobre estos resultados:</strong> el porcentaje mide la cercanía entre tus respuestas y la posición estimada de cada partido en cada pregunta (programas electorales, votaciones parlamentarias y declaraciones públicas). Son valoraciones simplificadas de 1 a 5, no posiciones oficiales, y no constituyen una recomendación de voto. Consulta siempre las fuentes de cada partido.</div>
+<details class="matrix-details"><summary>Ver cómo se ha puntuado cada partido, pregunta por pregunta</summary><div id="matrix"></div></details>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:22px"><button class="btn btn-primary" id="restart">Volver a empezar</button><button class="btn btn-secondary" id="print">Imprimir / guardar PDF</button></div>
+</div>
+</section>
+<p class="disclaimer">Proyecto independiente y sin afiliación política. Las posiciones de los partidos son estimaciones orientativas y pueden contener errores o no reflejar cambios recientes.</p>
+</main>
+<footer>Hecho para fomentar la reflexión y la comparación informada de ideas. No afiliado a partidos políticos.</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
